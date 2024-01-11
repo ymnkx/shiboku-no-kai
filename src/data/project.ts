@@ -1,8 +1,8 @@
 export default {
   siteName: '詩墨の会',
   siteDescription: '書道家・久保田吟水による書道教室「詩墨の会」のWebサイトです。',
-  url: 'https://ymnkx.github.io/',
-  subDirectory: 'shiboku-no-kai/', // ex: 'sample/'
+  url: 'https://ymnkx.github.io',
+  subDirectory: 'shiboku-no-kai', // ex: 'sample/'
   publicDir: './public/',
   breakpoints: {
     sm: '0',

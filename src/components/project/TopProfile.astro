@@ -1,6 +1,8 @@
 ---
 import { Image } from 'astro:assets';
 import Thumbnail from '@/image/top/thumbnail.jpg';
+import d from '@/data/project.ts';
+const { subDirectory } = d;
 ---
 
 <div class="top-profile">
@@ -12,17 +14,17 @@ import Thumbnail from '@/image/top/thumbnail.jpg';
     <ul class="top-profile_sns">
       <li>
         <a href="https://www.mamekana.co.jp/profile/ginsui.html" target="_blank">
-          <Image src="/assets/icon/home.svg" width={24} height={24} alt="ホームページ" />
+          <Image src={`/${subDirectory}/assets/icon/home.svg`} width={24} height={24} alt="ホームページ" />
         </a>
       </li>
       <li>
         <a href="https://twitter.com/myideal" target="_blank">
-          <Image src="/assets/icon/x.svg" width={24} height={24} alt="x" />
+          <Image src={`/${subDirectory}/assets/icon/x.svg`} width={24} height={24} alt="x" />
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/ginsui.kubota/?igshid=YmMyMTA2M2Y%3D" target="_blank">
-          <Image src="/assets/icon/instagram.svg" width={24} height={24} alt="instagram" />
+          <Image src={`/${subDirectory}/assets/icon/instagram.svg`} width={24} height={24} alt="instagram" />
         </a>
       </li>
     </ul>
