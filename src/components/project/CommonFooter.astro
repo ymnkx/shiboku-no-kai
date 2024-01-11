@@ -1,0 +1,28 @@
+<footer class="common-footer">
+  <div class="common-footer_inner">
+    <div class="common-footer_blank"></div>
+    <div class="common-footer_copy">
+      <div>&copy;{new Date().getFullYear()} 詩墨の会</div>
+    </div>
+    <div class="common-footer_blank"></div>
+  </div>
+</footer>
+
+<style lang="scss">
+  .common-footer {
+    padding: 4rem 0 var(--size-gutter) 0;
+  }
+
+  .common-footer_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: var(--typo-size-50);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .common-footer_blank {
+    flex: 1;
+  }
+</style>

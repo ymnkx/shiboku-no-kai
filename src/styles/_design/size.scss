@@ -1,0 +1,15 @@
+@use "@/styles/_develop/+.scss" as *;
+
+:root {
+  --size-radius: 0.5rem;
+  --size-gutter: 1rem;
+  --size-max-width: 60rem;
+
+  @include min-screen(md) {
+    --size-gutter: 3rem;
+  }
+
+  @include min-screen(lg) {
+    --size-gutter: 4rem;
+  }
+}

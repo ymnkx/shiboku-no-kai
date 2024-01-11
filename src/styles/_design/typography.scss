@@ -1,0 +1,27 @@
+:root {
+  --typo-font-base: "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
+  --typo-font-roboto: "Roboto", sans-serif;
+  --typo-font-mincho: "Hina Mincho", serif;
+
+  --typo-size-10: 0.625rem; // 10
+  --typo-size-50: 0.75rem; // 12
+  --typo-size-70: 0.875rem; // 14
+  --typo-size-100: 1rem; // 16
+  --typo-size-300: 1.25rem; // 20
+  --typo-size-500: 1.5rem; // 24
+  --typo-size-700: 2rem; // 32
+  --typo-size-900: 2.5rem; // 40
+
+  --typo-size-base: 1rem;
+
+  @media (width <= 390px) {
+    --font-size-base: min(4.1vw, 1rem);
+  }
+
+  --typo-lh-xxxxs: 0.75;
+  --typo-lh-xxxs: 1;
+  --typo-lh-xxs: 1.125;
+  --typo-lh-xs: 1.25;
+  --typo-lh-s: 1.5;
+  --typo-lh-base: 1.75;
+}

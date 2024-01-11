@@ -1,0 +1,43 @@
+<footer class="common-header">
+  <div class="common-header_inner">
+    <div class="common-header_blank"></div>
+    <div class="common-header_title">
+      <h1>詩墨<span class="no">の</span>会</h1>
+    </div>
+    <div class="common-header_blank"></div>
+  </div>
+</footer>
+
+<style lang="scss">
+  .common-header {
+    padding: 2rem 0;
+  }
+
+  .common-header_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: var(--typo-size-50);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .common-header_title {
+    font-family: var(--typo-font-mincho);
+    letter-spacing: 0.25em;
+
+    .no {
+      display: inline-block;
+      transform: translateX(0.0666em);
+    }
+
+    :global(h1) {
+      font-size: 2rem;
+      line-height: 1;
+    }
+  }
+
+  .common-header_blank {
+    flex: 1;
+  }
+</style>

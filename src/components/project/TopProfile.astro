@@ -1,0 +1,68 @@
+---
+import { Image } from 'astro:assets';
+import Thumbnail from '@/image/top/thumbnail.jpg';
+---
+
+<div class="top-profile">
+  <div class="top-profile_inner">
+    <div class="top-profile_thumbnail">
+      <Image src={Thumbnail} alt="" />
+    </div>
+    <h2 class="top-profile_name">久保田 吟水</h2>
+    <ul class="top-profile_sns">
+      <li>
+        <a href="https://www.mamekana.co.jp/profile/ginsui.html" target="_blank">
+          <Image src="/assets/icon/home.svg" width={24} height={24} alt="ホームページ" />
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/myideal" target="_blank">
+          <Image src="/assets/icon/x.svg" width={24} height={24} alt="x" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/ginsui.kubota/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+          <Image src="/assets/icon/instagram.svg" width={24} height={24} alt="instagram" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<style lang="scss">
+  .top-profile {
+    margin-top: 4rem;
+  }
+
+  .top-profile_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .top-profile_thumbnail {
+    --this-size: 6rem;
+
+    width: var(--this-size);
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border: 2px solid #666;
+    border-radius: 100vmax;
+  }
+
+  .top-profile_name {
+    font-family: var(--typo-font-mincho);
+    font-size: 1.125rem;
+  }
+
+  .top-profile_sns {
+    display: flex;
+    gap: 0.25rem;
+
+    :global(a) {
+      display: block;
+      padding: 0.25rem;
+    }
+  }
+</style>
