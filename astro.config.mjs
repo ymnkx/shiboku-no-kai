@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 // https://astro.build/config
 export default defineConfig({
   base: subDirectory,
-  outDir: `./dist/${subDirectory}`,
+  outDir: `./docs/${subDirectory}`,
   publicDir: publicDir,
   site: url,
   server: { host: true, port: 3000 },
