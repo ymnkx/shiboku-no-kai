@@ -11,10 +11,10 @@ const __dirname = dirname(__filename);
 
 // https://astro.build/config
 export default defineConfig({
-  base: subDirectory,
+  base: '/shiboku-no-kai',
   outDir: `./docs`,
   publicDir: publicDir,
-  site: url,
+  site: 'https://ymnkx.github.io',
   server: { host: true, port: 3000 },
   vite: {
     plugins: [
